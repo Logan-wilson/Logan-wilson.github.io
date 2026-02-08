@@ -1,0 +1,88 @@
+---
+---
+
+@conference{Servant2023,
+  bibtex_show={true},
+  title={An Extension of the Radial Line Model to Predict Spatial Relations},
+  author={Servant, Logan and Kurtz, Camille and Wendling, Laurent},
+  booktitle={Proceedings of the 18th International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications (VISIGRAPP 2023) - Volume 4: VISAPP},
+  year={2023},
+  pages={187-195},
+  publisher={SciTePress},
+  organization={INSTICC},
+  doi={10.5220/0011644300003417},
+  isbn={978-989-758-634-7},
+  url={https://www.scitepress.org/PublishedPapers/2023/116443/116443.pdf},
+  html={https://www.scitepress.org/PublicationsDetail.aspx?ID=I1gqc7ZC9M8=&t=1},
+  abstract={Analysing the spatial organization of objects in images is fundamental to increasing both the understanding
+of a scene and the explicability of perceived similarity between images. In this article, we propose to describe
+the spatial positioning of objects by an extension of the original Radial Line Model to any pair of objects
+present in an image, by defining a reference point from the convex hulls and not the enclosing rectangles, as
+done in the initial version of this descriptor. The recognition of spatial configurations is then considered as a
+classification task where the achieved descriptors can be embedded in a neural learning mechanism to predict
+from object pairs their directional spatial relationships. An experimental study, carried out on different image
+datasets, highlights the interest of this approach and also shows that such a representation makes it possible
+to automatically correct or denoise datasets whose construction has been rendered ambiguous by the human
+evaluation of 2D/3D views.}
+}
+
+
+@conference{WACV25,
+  bibtex_show={true},
+  author       = {Servant, Logan and
+                  Cl{\'{e}}ment, Micha{\"{e}}l and
+                  Wendling, Laurent and
+                  Kurtz, Camille},
+  title        = {Contrastive Learning of Image Representations Guided by Spatial Relations},
+  booktitle    = {{IEEE/CVF} Winter Conference on Applications of Computer Vision, {WACV}
+                  2025, Tucson, AZ, USA, February 26 - March 6, 2025},
+  pages        = {2124--2133},
+  publisher    = {{IEEE}},
+  year         = {2025},
+  url          = {https://doi.org/10.1109/WACV61041.2025.00213},
+  html      ={https://openaccess.thecvf.com/content/WACV2025/papers/Servant_Contrastive_Learning_of_Image_Representations_Guided_by_Spatial_Relations_WACV_2025_paper.pdf},
+  abstract     ={The spatial information contained in images is of critical importance for many computer vision tasks. Current state-of-the-art approaches dealing with spatially-related tasks, such as spatial relationship recognition, are typically
+trained in a supervised manner with semantic information carried by annotations. However, datasets containing spatial relations (such as VisualGenome and SpatialSense) contain many errors or ambiguities at the label level (e.g. 
+polysemy of the relations, use of different reference frames across relations) which might deteriorate the representation learning step. The representations and image embeddings obtained from this training setup carry poor spatial information, 
+as they are entangled with other modalities, such as semantic information. To deal with this issue, we introduce C-SIP (Contrastive Spatial-Image Pre-training), an approach aiming to learn better spatially-aware image rep resentations, 
+more in agreement with human perception of a scene where spatial information is structuring. This train ing strategy focuses on the alignment of the embeddings of
+an image encoder and a spatial encoder, optimized from the image content, in a self-supervised manner. We showcase that training a model with spatial information at its core thanks to C-SIP allows for better spatially-aware image
+representations on three downstream tasks. These representations can be used in a zero-shot setting such as image retrieval, or fine-tuned on semantic tasks, such as visual question answering, and provide better results compared with supervised counterparts. Our source code can be found at https://github.com/Logan-wilson/CSIP.}
+}
+
+
+
+
+
+@article{SpIRL,
+  bibtex_show={true},
+  author       = {Logan Servant and
+                  Micha{\"{e}}l Cl{\'{e}}ment and
+                  Laurent Wendling and
+                  Camille Kurtz},
+  title        = {SpIRL: Spatially-aware image representation learning under the supervision
+                  of relative position descriptors},
+  journal      = {Pattern Recognit.},
+  volume       = {169},
+  pages        = {112013},
+  year         = {2026},
+  url          = {https://doi.org/10.1016/j.patcog.2025.112013},
+  doi          = {10.1016/J.PATCOG.2025.112013},
+  html         = {https://doi.org/10.1016/j.patcog.2025.112013},
+  abstract     = {Extracting good visual representations from image contents is essential for solving many computer vision
+problems (e.g. image retrieval, object detection, classification). In this context, state-of-the-art approaches
+are mainly based on learning a representation using a neural network optimized for a given task. The
+encoders optimized in this way can then be deployed as backbones for various downstream tasks. When the
+latter involves reasoning about spatial information from the image content (e.g. retrieve similar structured
+scenes or compare spatial configurations), this may be suboptimal since models like convolutional neural
+networks struggle to reason about the relative position of objects in images. Previous studies on building
+hand-crafted spatial representations, thanks to Relative Position Descriptors (RPD), showed they were powerful
+to discriminate spatial relations between crisp objects, but such spatial descriptors have rarely been integrated
+into deep neural networks. We propose in this article different strategies embedded in a common framework
+called SpIRL (SPatially-aware Image Representation Learning) to guide the optimization of encoders to make
+them learn more spatial information, under the supervision of an RPD and with the help of a novel dataset
+(44k images) that does not induce learning semantic information. By using these strategies, we aim to help
+encoders build more spatially-aware representations. Our experimental results showcase that encoders trained
+under the SpIRL framework can capture accurate information about the spatial configurations of objects in
+images on two selected downstream tasks and public datasets.}
+}
