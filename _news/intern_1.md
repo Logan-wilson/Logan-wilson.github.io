@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Yassine Fekih-Hassen and Auguste Calmanovic-Pescoff are joining us for two-month internships, welcome!
+Yassine Fekih Hassen and Auguste Calmanovic-Plescoff are joining us for two-month internships, welcome!
